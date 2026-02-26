@@ -8,13 +8,13 @@
 // ---------------- VOTER STRUCTURE ----------------
 struct Voter {
     char voterId[11];   // AAA1234567
-    char name[30];
+    char name[20];
 };
 
 // ---------------- CANDIDATE STRUCTURE ----------------
 struct Candidate {
     int candidateId;
-    char name[30];
+    char name[20];
     char symbol[20];
     char password[20];
     int voteCount;
@@ -38,9 +38,9 @@ int main() {
     int choice;
 
     // Initialize candidates
-    candidates[0] = (struct Candidate){1, "Ramesh Kumar", "LOTUS", "Ramesh123", 0};
-    candidates[1] = (struct Candidate){2, "Suresh Reddy", "HAND", "Suresh123", 0};
-    candidates[2] = (struct Candidate){3, "Anjali Sharma", "FARMER", "Anjali123", 0};
+    candidates[0] = (struct Candidate){1, "Nitheesh Kumar", "LOTUS", "Ramesh123", 0};
+    candidates[1] = (struct Candidate){2, "Bharathi Reddy", "HAND", "Suresh123", 0};
+    candidates[2] = (struct Candidate){3, "Sanjay Varma", "FARMER", "Anjali123", 0};
 
     do {
         printf("\n===== MINI VOTING SYSTEM =====\n");
